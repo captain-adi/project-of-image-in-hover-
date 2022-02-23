@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+  <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <style>
+  body{
+    background-color: #AAC9C442;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    height: 100vh;
+  }
+  .card{ 
+   /* border: 1px solid black; */
+  display: inline-block;
+  }
+    .header,.footer{
+      width: 460px;
+      padding:20px;
+      margin-left: 15px;
+      background-color: snow;
+      position: relative;font-size: 20px;
+      font-weight: bold;
+      text-align: center;
+      border-radius: 40px;
+      box-shadow: 0px 0px 6px black; opacity: 0;
+      transform: translateY(-20px);
+      backdrop-filter: blur(10px);
+      transition-duration: 0.7s;
+      transition-timing-function: ease;
+    }
+    .image{ height: 350px; border-radius:20px;
+    box-shadow: 0px 0px 12px black;
+    width: 500px; background-image: url("https://source.unsplash.com/1600x900/?nature");
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+    
+    #header{ 
+  top: 40px;
+}
+
+   .card:hover .footer {
+     /* background-color: black; */
+      opacity: 1;
+      box-shadow: 0px 0px 5px 1px black;
+    }
+    .card:hover .header{
+      /* background-color: black; */
+      box-shadow: 0px 0px 9px 3px black;
+      
+      
+      opacity: 1;
+    }
+    i{
+      margin: 0px 30px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="card">
+    <div class="header" id="header" style="font-weight: lighter">thanks for visiting our website
+    <i class="fa fa-heart"></i>
+    </div>
+    <div class="image"></div>
+    <div class="footer">
+    <i class="glyphicon glyphicon-remove"></i>
+    <i class="glyphicon glyphicon-user"></i>
+    <i class="glyphicon glyphicon-envelope"></i>
+    <i class="glyphicon glyphicon-thumbs-up"></i>
+    </div>
+    
+  </div>
+
+</body>
+
+</html>
